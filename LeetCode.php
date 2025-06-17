@@ -210,4 +210,22 @@ class LeetCode
             }
         }
     }
+
+    public static function isSubsequence(string $s = 'axc', string $t = 'ahbgdc'): bool
+    {
+        $firstPointer = 0;
+
+        $sLength = strlen($s);
+        $tLength = strlen($t);
+        $counter = 0;
+
+        for ($i = 0; $i < $tLength; $i++) {
+            if ($s[$firstPointer] === $t[$i]) {
+                $counter++;
+                $firstPointer++;
+            }
+        }
+
+        return $counter === $sLength;
+    }
 }

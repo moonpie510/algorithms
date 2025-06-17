@@ -14,5 +14,4 @@ require_once "DivideAndConquer.php";
 require_once "TestTask.php";
 require_once "LeetCode.php";
 
-LeetCode::moveZeroes();
-//var_export(LeetCode::moveZeroes());
+var_export(LeetCode::isSubsequence());
